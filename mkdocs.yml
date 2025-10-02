@@ -25,7 +25,6 @@ nav:
     - Overview: architecture/overview.md
     - System Diagram: architecture/system_diagram.md
     - Component Diagrams:
-      - Overview: architecture/component_diagrams/README.md
       - Template: architecture/component_diagrams/component-template.md
   - API:
     - Overview: api/README.md
