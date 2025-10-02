@@ -8,4 +8,3 @@ Short description of the project
 - 🗺️ [System Diagram](architecture/system_diagram.md)
 - 🔌 [API Documentation](api/README.md)
 - 🧪 [Examples](examples/README.md)
-- 🤝 [Contributing](../CONTRIBUTING.md)
