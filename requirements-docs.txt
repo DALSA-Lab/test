@@ -1,0 +1,7 @@
+
+mkdocs>=1.5
+mkdocs-material>=9.5
+mkdocs-mermaid2-plugin>=1.1
+# optional for Python API autodocs
+mkdocstrings>=0.24
+mkdocstrings-python>=1.10.8
