@@ -20,14 +20,16 @@ plugins:
   - search
   - mermaid2
 nav:
-  - Home: docs/index.md
+  - Home: index.md
   - Architecture:
-    - Overview: docs/architecture/overview.md
-    - System Diagram: docs/architecture/system_diagram.md
+    - Overview: architecture/overview.md
+    - System Diagram: architecture/system_diagram.md
     - Component Diagrams:
-      - Template: docs/architecture/component_diagrams/component-template.md
+      - Overview: architecture/component_diagrams/README.md
+      - Template: architecture/component_diagrams/component-template.md
   - API:
-    - README: docs/api/README.md
-    - OpenAPI: docs/api/openapi.yaml
+    - Overview: api/README.md
+    - OpenAPI (raw): api/openapi.yaml
   - Examples:
-    - README: docs/examples/README.md
+    - Overview: examples/README.md
+  - Contributing: contributing.md
