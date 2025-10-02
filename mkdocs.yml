@@ -32,4 +32,4 @@ nav:
     - OpenAPI (raw): api/openapi.yaml
   - Examples:
     - Overview: examples/README.md
-  - Contributing: contributing.md
+    - C++: examples/cpp/README.md
