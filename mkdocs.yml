@@ -23,5 +23,7 @@ nav:
   - API:
     - Overview: api/README.md
     - Module: api/module.md
+    - CPPPKG: api/cpppkg.md
+    - C++ API Docs: api-cpp/html/index.html
   - Examples:
     - Overview: examples/README.md
