@@ -1,7 +1,7 @@
 
 site_name: "Auto Calib"
 site_description: "Short description of the project"
-repo_url: "https://github.com/DALSA-lab/auto_calib"
+repo_url: "https://github.com/DALSA-Lab/test"
 theme:
   name: mkdocs
 markdown_extensions:
