@@ -1,3 +1,3 @@
 # Module Documentation
 
-::: dummypkg.module
+::: pypkg.module
