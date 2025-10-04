@@ -13,6 +13,8 @@ on:
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
+    env:      
+      PYTHONPATH: src
     permissions:
       contents: write
       pages: write
