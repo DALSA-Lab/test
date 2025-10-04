@@ -16,7 +16,7 @@ flowchart LR
 
 ## Interactions
 Describe how components communicate.
-- See [Component diagrams](component_diagrams/)
+- See [Component diagrams](component_diagrams/component-template.md)
 
 ## Constraints & Trade-offs
 - Performance, cost, complexity, hardware constraints (if any)
