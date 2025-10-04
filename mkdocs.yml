@@ -13,6 +13,7 @@ markdown_extensions:
 plugins:
   - search
   - mermaid2
+  - mkdocstrings
 nav:
   - Home: index.md
   - Architecture:
