@@ -16,7 +16,6 @@ flowchart LR
 
 ## Interactions
 Describe how components communicate.
-- See [System Diagram](system_diagram.md)
 - See [Component diagrams](component_diagrams/)
 
 ## Constraints & Trade-offs
