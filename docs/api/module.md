@@ -1,3 +1,3 @@
 # Module Documentation
 
-::: pypkg.module
+::: src.pypkg.module
