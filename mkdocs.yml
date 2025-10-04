@@ -22,5 +22,6 @@ nav:
       - Template: architecture/component_diagrams/component-template.md
   - API:
     - Overview: api/README.md
+    - Module: api/module.md
   - Examples:
     - Overview: examples/README.md
