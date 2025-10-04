@@ -3,7 +3,7 @@ site_name: "Auto Calib"
 site_description: "Short description of the project"
 repo_url: "https://github.com/DALSA-Lab/test"
 theme:
-  name: mkdocs
+  name: readthedocs
 markdown_extensions:
   - admonition
   - toc:
