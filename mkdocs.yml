@@ -3,13 +3,7 @@ site_name: "Auto Calib"
 site_description: "Short description of the project"
 repo_url: "https://github.com/DALSA-lab/auto_calib"
 theme:
-  name: material
-  features:
-    - content.code.copy
-    - navigation.instant
-    - navigation.sections
-    - navigation.top
-    - toc.integrate
+  name: mkdocs
 markdown_extensions:
   - admonition
   - toc:

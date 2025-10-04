@@ -1,10 +1,4 @@
 
-# Examples
+# C++ Examples
 
-Provide runnable examples showing typical usage.
-
-Each example should include:
-- Purpose
-- Setup steps
-- How to run
-- Expected output
+Place small C++ programs here demonstrating usage.

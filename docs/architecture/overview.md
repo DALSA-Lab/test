@@ -1,9 +1,14 @@
 
 # Architecture Overview
 
-## Goals & Non-Goals
-- Goals: ...
-- Non-Goals: ...
+# Diagram
+
+```mermaid
+flowchart LR
+  User --> UI
+  UI --> Service
+  Service --> DB[(Database)]
+```
 
 ## High-Level Components
 - Component A — purpose, inputs/outputs
