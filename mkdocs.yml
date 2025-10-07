@@ -1,9 +1,7 @@
-
 site_name: "Auto Calib"
 site_description: "Short description of the project"
 repo_url: "https://github.com/DALSA-Lab/test"
-theme:
-  name: readthedocs
+theme: readthedocs
 markdown_extensions:
   - admonition
   - toc:
@@ -12,8 +10,18 @@ markdown_extensions:
   - pymdownx.details
 plugins:
   - search
-  - mermaid2
   - mkdocstrings
+  - mermaid2:
+      version: '10.1.0'
+      arguments:
+        theme: 'dark'
+        themeVariables:
+          primaryColor: '#BB2528'
+          primaryTextColor: '#fff'
+          primaryBorderColor: '#7C0000'
+          lineColor: '#F8B229'
+          secondaryColor: '#006100'
+          tertiaryColor: '#fff'
 nav:
   - Home: index.md
   - Architecture:
@@ -23,7 +31,10 @@ nav:
   - API:
     - Overview: api/README.md
     - Module: api/module.md
-    - CPPPKG: api/cpppkg.md
+    - CPPPKG: api/cpp_pkg/index.md
     - C++ API Docs: api-cpp/html/index.html
   - Examples:
     - Overview: examples/README.md
+
+extra_javascript:
+    - https://unpkg.com/mermaid@8.8.2/dist/mermaid.min.js
