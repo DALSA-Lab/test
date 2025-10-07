@@ -4,6 +4,7 @@ math_utils.py - A dummy module for demonstration
 
 DEFAULT_GREETING = "Hello"
 
+
 def shout(text):
     """
     Convert text to uppercase.
@@ -19,6 +20,7 @@ def shout(text):
         The uppercase version of the input string.
     """
     return text.upper()
+
 
 class Formatter:
     """

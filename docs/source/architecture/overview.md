@@ -1,7 +1,7 @@
 
-# Architecture Overview
+# Overview
 
-## Diagram
+## Architecture Diagram
 
 ```{mermaid}
   flowchart LR
@@ -16,7 +16,7 @@
 
 ## Interactions
 Describe how components communicate.
-<!-- - See [Component diagrams](component_diagrams/component-template.md) -->
+- See [Component diagrams](component_diagrams/index.rst)
 
 ## Constraints & Trade-offs
 - Performance, cost, complexity, hardware constraints (if any)

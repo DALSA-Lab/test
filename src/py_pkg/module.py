@@ -4,6 +4,7 @@ module.py - A dummy module for demonstration
 This module contains simple functions with docstrings for MkDocs API documentation.
 """
 
+
 def add(a: int, b: int) -> int:
     """
     Add two numbers.
@@ -16,6 +17,7 @@ def add(a: int, b: int) -> int:
         int or float: The sum of a and b.
     """
     return a + b
+
 
 def greet(name: str) -> str:
     """

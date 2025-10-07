@@ -2,7 +2,7 @@ Examples
 ========
 
 .. toctree::
-   :maxdepth: 2
+   :numbered: 1
    :caption: Contents:
 
    example_1.md

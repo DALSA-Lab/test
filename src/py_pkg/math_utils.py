@@ -4,6 +4,7 @@ math_utils.py - A dummy module for demonstration
 
 PI = 3.14159
 
+
 def square(x):
     """
     Calculate the square of a number.
@@ -19,6 +20,7 @@ def square(x):
         The square of the input number.
     """
     return x * x
+
 
 class Calculator:
     """

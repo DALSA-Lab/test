@@ -5,5 +5,5 @@ Documentation
 .. toctree::
    :maxdepth: 2
 
-   py_pkgs/py_pkgs.rst
-   cpp_pkgs/cpp_pkgs.rst
+   py_pkgs/index.rst
+   cpp_pkgs/index.rst

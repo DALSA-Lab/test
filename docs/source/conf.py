@@ -21,6 +21,7 @@ extensions = [
     "sphinx.ext.autodoc",
     "sphinx.ext.napoleon",
     "sphinx.ext.autosummary",
+    "sphinx.ext.githubpages",
     "breathe",
     'myst_parser',
     'sphinxcontrib.mermaid',
@@ -30,7 +31,7 @@ templates_path = ['_templates']
 exclude_patterns = []
 
 breathe_projects = {
-    "cpp_pkg": "../api-cpp/xml/",
+    "cpp_pkg": "../doxygen/xml/",
 }
 
 # -- Options for HTML output -------------------------------------------------

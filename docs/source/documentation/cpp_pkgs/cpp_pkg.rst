@@ -1,5 +1,5 @@
 Dummy C++ Package
-====================
+=================
 
 .. cpp:namespace:: math_utils
 
