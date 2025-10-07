@@ -1,5 +1,5 @@
 Python Packages Documentation
-============================
+=============================
 
 .. toctree::
    :maxdepth: 2
