@@ -28,7 +28,7 @@ jobs:
 
       - name: Configure (CMake)
         run: |
-          cmake -S src/cpp_pkg -B src/cpp_pkg/build - \
+          cmake -S src/cpp_pkg -B src/cpp_pkg/build \
             -DCMAKE_EXPORT_COMPILE_COMMANDS=ON
 
       - name: Build
