@@ -36,8 +36,9 @@ jobs:
 
       - name: Run clang-tidy
         run: |
-          clang-tidy src/cpp_pkg/src/*.cpp -p src/cpp_pkg/build 
-
+          for file in $(find src/cpp_pkg -name '*.cpp' -o -name '*.hpp'); do
+            clang-tidy "$file" -p src/cpp_pkg/build -warnings-as-errors=*
+          done
 
       - name: Run clang-format
         run: clang-format -i src/cpp_pkg/**/*.cpp src/cpp_pkg/**/*.hpp
