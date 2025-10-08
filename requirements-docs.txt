@@ -7,14 +7,8 @@ mkdocstrings>=0.24
 mkdocstrings-python>=1.10.8
 
 
-sphinx
-sphinx-autodoc-typehints
-sphinxcontrib-mermaid
-sphinx_rtd_theme
-sphinx-autosummary-accessors
-sphinx-autosummary
-sphinx-autodoc
-sphinx-napoleon
-sphinx.ext.githubpages
-breathe
-myst-parser
+sphinx>=8.2.3
+sphinxcontrib-mermaid>=1.0.0
+sphinx_rtd_theme>=3.0.2
+breathe>=4.36.0
+myst-parser>=4.0.1
