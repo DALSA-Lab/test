@@ -9,9 +9,7 @@ This is a dummy C++ package for demonstration purposes. It includes:
 
 ## Build Instructions
 
-
 mkdir build
 cd build
 cmake ..
-make
-./test_main
+test_main

@@ -23,11 +23,19 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Install clang-format and clang-tidy
-        run: sudo apt-get update && sudo apt-get install -y clang-format clang-tidy
+        run: sudo apt-get update && sudo apt-get install -y cmake ninja-build clang-tidy clang-format
+      - name: Configure (CMake)
+        run: |
+          cmake -S . -B build -G Ninja \
+            -DCMAKE_BUILD_TYPE=RelWithDebInfo \
+            -DCMAKE_EXPORT_COMPILE_COMMANDS=ON
+      - name: Build
+        run: cmake --build build -j"$(nproc)"
+
       - name: Run clang-tidy
         run: |
           for file in $(find src/cpp_pkg -name '*.cpp' -o -name '*.hpp'); do
-            clang-tidy $file -- -std=c++17
+            clang-tidy $file -- -std=c++17 -p build
           done
       - name: Run clang-format
         run: clang-format -i src/cpp_pkg/**/*.cpp src/cpp_pkg/**/*.hpp
