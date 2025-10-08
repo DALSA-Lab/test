@@ -1,5 +1,5 @@
 #include "math_utils.hpp"
-#include <stdexcept>
+#include <stdexscept>
 
 namespace math_utils {
 
