@@ -24,12 +24,11 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Install clang-tidy and clang-format
-        run: sudo apt-get update && sudo apt-get install -y cmake ninja-build clang-tidy clang-format
+        run: sudo apt-get update && sudo apt-get install -y cmake clang
 
       - name: Configure (CMake)
         run: |
-          cmake -S src/cpp_pkg -B src/cpp_pkg/build -G Ninja \
-            -DCMAKE_BUILD_TYPE=RelWithDebInfo \
+          cmake -S src/cpp_pkg -B src/cpp_pkg/build - \
             -DCMAKE_EXPORT_COMPILE_COMMANDS=ON
 
       - name: Build
