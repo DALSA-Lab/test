@@ -5,3 +5,16 @@ mkdocs-mermaid2-plugin>=1.1
 # optional for Python API autodocs
 mkdocstrings>=0.24
 mkdocstrings-python>=1.10.8
+
+
+sphinx
+sphinx-autodoc-typehints
+sphinxcontrib-mermaid
+sphinx_rtd_theme
+sphinx-autosummary-accessors
+sphinx-autosummary
+sphinx-autodoc
+sphinx-napoleon
+sphinx.ext.githubpages
+breathe
+myst-parser

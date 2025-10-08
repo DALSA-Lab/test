@@ -1,0 +1,33 @@
+name: Lint and Format
+
+on: [push, pull_request]
+
+jobs:
+  python-lint-format:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install Ruff
+        run: pip install ruff
+      - name: Run Ruff (lint)
+        run: ruff check src/py_pkg
+      - name: Run Ruff (format)
+        run: ruff format src/py_pkg
+
+  cpp-lint-format:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install clang-format and clang-tidy
+        run: sudo apt-get update && sudo apt-get install -y clang-format clang-tidy
+      - name: Run clang-tidy
+        run: |
+          for file in $(find src/cpp_pkg -name '*.cpp' -o -name '*.hpp'); do
+            clang-tidy $file -- -std=c++17
+          done
+      - name: Run clang-format
+        run: clang-format -i src/cpp_pkg/**/*.cpp src/cpp_pkg/**/*.hpp
