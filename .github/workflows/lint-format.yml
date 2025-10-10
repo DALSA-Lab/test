@@ -30,7 +30,7 @@ jobs:
         run: |
           cmake -S src/cpp_pkg -B src/cpp_pkg/build \
             -DCMAKE_EXPORT_COMPILE_COMMANDS=ON \
-            -DCMAKE_CXX_CLANG_TIDY="clang-tidy;-header-filter=.;-checks=*;
+            -DCMAKE_CXX_CLANG_TIDY="clang-tidy;-header-filter=.;-checks=*";
 
       - name: Build
         run: cmake --build src/cpp_pkg/build -j"$(nproc)"
