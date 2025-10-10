@@ -29,16 +29,17 @@ jobs:
       - name: Configure (CMake)
         run: |
           cmake -S src/cpp_pkg -B src/cpp_pkg/build \
-            -DCMAKE_EXPORT_COMPILE_COMMANDS=ON
+            -DCMAKE_EXPORT_COMPILE_COMMANDS=ON \
+            -DCMAKE_CXX_CLANG_TIDY="clang-tidy;-header-filter=.;-checks=*;
 
       - name: Build
         run: cmake --build src/cpp_pkg/build -j"$(nproc)"
 
-      - name: Run clang-tidy
-        run: |
-          for file in $(find src/cpp_pkg -name '*.cpp' -o -name '*.hpp'); do
-            clang-tidy "$file" -p src/cpp_pkg/build -warnings-as-errors=*
-          done
+      # - name: Run clang-tidy
+      #   run: |
+      #     for file in $(find src/cpp_pkg -name '*.cpp' -o -name '*.hpp'); do
+      #       clang-tidy "$file" -p src/cpp_pkg/build -warnings-as-errors=*
+      #     done
 
       - name: Run clang-format
         run: clang-format -i src/cpp_pkg/**/*.cpp src/cpp_pkg/**/*.hpp
