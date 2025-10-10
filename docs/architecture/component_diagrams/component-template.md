@@ -1,7 +1,7 @@
 
 # Component Diagram (Template)
 
-```mermaid
+```{mermaid}
 flowchart LR
   A[Component A] -->|calls| B[Component B]
   B --> C[(State Store)]
