@@ -26,7 +26,7 @@ jobs:
       - name: Install clang-tidy and clang-format
         run: sudo apt-get update && sudo apt-get install -y cmake clang
 
-      - name: Configure (CMake)
+      - name: Configure (CMake) With clang-tidy
         run: |
           cmake -S src/cpp_pkg -B src/cpp_pkg/build \
             -DCMAKE_EXPORT_COMPILE_COMMANDS=ON \
